@@ -1,5 +1,3 @@
-
-
 $(function() {
     includeNavbar();
     $("#start-button").click(function() {
@@ -32,10 +30,10 @@ $(function() {
                     basement_cycle = parseInt(index) + 1;
                 }
                 let status = index + 1 === input.length ? "Computing done" : "Computing..."
-                output.html(status + "<br>" + bufferString + "<br>Done: " + done + "/" + input.length + "<br>Basement entered: " + basement + (basement_cycle != 0 ? (" / " + basement_cycle) : "") + "<br>Floor: " + floor);
+                output.html(`${status}<br>${bufferString}<br>Done: ${done}/${input.length}<br>Basement entered: ${basement}${(basement_cycle != 0 ? (" / " + basement_cycle) : "")}<br>Floor: ${floor}`);
                 done++;
             }, 1 * index);
         }
-        output.html('Computing done<br>Floor: ' + floor)
+        output.html(`Computing done<br>Floor: ${floor}`)
     });
 });
