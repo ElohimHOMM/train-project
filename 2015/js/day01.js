@@ -1,7 +1,8 @@
 $(function() {
     includeNavbar();
     $("#start-button").click(function() {
-        let input = $("#ta-input").val();
+        let input = $("#ta-input").val().trim();
+        let compTime = $("#input-cb").prop("checked");
         let floor = 0;
         let output = $("#p-output");
         let bufferString = '';
@@ -32,7 +33,7 @@ $(function() {
                 let status = index + 1 === input.length ? "Computing done" : "Computing..."
                 output.html(`${status}<br>${bufferString}<br>Done: ${done}/${input.length}<br>Basement entered: ${basement}${(basement_cycle != 0 ? (" / " + basement_cycle) : "")}<br>Floor: ${floor}`);
                 done++;
-            }, 1 * index);
+            }, compTime ? 1 * index : 0);
         }
         output.html(`Computing done<br>Floor: ${floor}`)
     });

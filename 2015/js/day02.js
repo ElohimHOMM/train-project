@@ -2,7 +2,8 @@ $(function() {
     includeNavbar();
 
     $("#start-button").click(function() {
-        let input = $("#ta-input").val().split("\n");
+        let input = $("#ta-input").val().trim().split("\n");
+        let compTime = $("#input-cb").prop("checked");
         let output = $("#p-output");
         let wrappingPaperSqFeet = 0;
         let ribbonTotal = 0;
@@ -35,7 +36,7 @@ $(function() {
 
                 let status = parseInt(index) + 1 === input.length ? "Computing done" : "Computing..."
                 output.html(`${status}<br><br>Stats of last gift:<br>Length: ${length}<br>Width: ${width}<br>Height: ${height}<br>Smallest side (Slack): ${slack}<br>Bow Length: ${bow}<br>Wrap Ribbon Length: ${wrapLength}<br><br>Total Wrapping Paper Square Feet: ${wrappingPaperSqFeet}<br>Total Ribbon Length: ${ribbonTotal}`);
-            }, 2 * index);
+            }, compTime ? 2 * index : 0);
         }
     });
 });

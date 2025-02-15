@@ -11,6 +11,7 @@ function includeNavbar() {
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/2015/day01.html">Day 01</a></li>
                   <li><a class="dropdown-item" href="/2015/day02.html">Day 02</a></li>
+                  <li><a class="dropdown-item" href="/2015/day03.html">Day 03</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Day 11</a></li>                  
                 </ul>
