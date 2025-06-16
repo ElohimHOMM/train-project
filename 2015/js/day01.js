@@ -9,8 +9,6 @@ $(function() {
         let done = 1;
         let basement = false;
         let basement_cycle = 0;
-
-        output.html("Computing...");
         
         for(let index in input) {
             let char = input[index];

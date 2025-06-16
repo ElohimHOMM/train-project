@@ -8,8 +8,6 @@ $(function() {
         let wrappingPaperSqFeet = 0;
         let ribbonTotal = 0;
 
-        output.html("Computing...");
-
         for(let index in input) {
             let element = input[index].split('x');
             setTimeout(() => {
