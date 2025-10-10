@@ -24,6 +24,7 @@ function includeNavbar() {
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/unrelated/mox.html">Mox' Hobby Page</a></li>
+                  <li><a class="dropdown-item" href="/unrelated/skills.html">Skills Ranking</a></li>
                 </ul>
               </li>
             </ul>

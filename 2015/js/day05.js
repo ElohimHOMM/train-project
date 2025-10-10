@@ -72,6 +72,8 @@ function containsTwoOrLessVowels(line) {
 }
 
 // -----------------------------------------------------------------------
+// Part 2 checks
+// -----------------------------------------------------------------------
 
 function doesNotContainDoubleLetterWithSpace(line) {
     lastLetter = line[0];
