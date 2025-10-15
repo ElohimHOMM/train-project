@@ -31,4 +31,5 @@ function includeNavbar() {
           </div>
         </div>
     </nav>`);
+    
 }
