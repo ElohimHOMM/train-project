@@ -25,11 +25,11 @@ function includeNavbar() {
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/train-project/unrelated/mox.html">Mox' Hobby Page</a></li>
                   <li><a class="dropdown-item" href="/train-project/unrelated/skills.html">Skills Ranking</a></li>
+                  <li><a class="dropdown-item" href="/train-project/unrelated/ausweis.html">Prüfziffer Rechner</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
     </nav>`);
-    
 }
